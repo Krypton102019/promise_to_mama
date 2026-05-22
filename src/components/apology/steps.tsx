@@ -194,7 +194,7 @@ const PROMISES = [
   `I promise to be 100% transparent and loyal to you, always, ${NAME}.`,
   `I promise I will never cheat or break your trust ever again, ${NAME}.`,
   `I promise to respect you, cherish you, and never hide anything from you.`,
-  `I'll text back instantly, even when busy, to make sure you always feel secure, ${NAME}.`,
+  `I know my actions hurt you deeply, မမ. I can’t change what I did, but I promise there will never be another person, another lie, or another betrayal again.`,
   `I promise to spend the rest of my days making up for the past and making you smile.`,
 ];
 

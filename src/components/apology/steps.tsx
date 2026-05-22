@@ -84,42 +84,88 @@ export function Step2({ onNext }: Props) {
   };
 
   return (
-    <div ref={shellRef} className={shake ? "shake-once" : ""}>
-      <PageShell>
-        <TapeCard className="text-center">
-          <p className="text-sm uppercase tracking-widest text-accent font-semibold">
-            If it still stings, {NAME}...
-          </p>
-          <h1 className="mt-2 text-3xl sm:text-4xl font-extrabold text-primary">
-            Here, hit reset, {NAME}
-          </h1>
-          <p className="mt-3 text-muted-foreground">
-            Tap as many times as you need to, {NAME}. Vent all your anger out on me. 1 Punch = 5 BAHT .. Screenshot & Send Me...  I will give you for real ❤️
-          </p>
+  <div ref={shellRef} className={shake ? "shake-once" : ""}>
+  <PageShell>
+    <TapeCard className="relative overflow-hidden text-center border border-pink-200/20 bg-white/70 backdrop-blur-xl shadow-2xl">
 
-          <button
-            onClick={hit}
-            className="btn-3d mx-auto mt-8 flex h-48 w-48 select-none items-center justify-center rounded-full bg-secondary text-secondary-foreground active:scale-95"
-            aria-label="Hit reset"
-          >
-            <img src={fistImg} alt="" width={140} height={140} className="h-32 w-32 pointer-events-none" />
-          </button>
-          <div className="mt-4 text-3xl font-extrabold text-primary tabular-nums">
-            x{count}
-          </div>
+      <div className="absolute -top-10 -right-10 h-40 w-40 rounded-full bg-pink-300/20 blur-3xl" />
+      <div className="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-rose-300/20 blur-3xl" />
 
-          <p className="mt-6 italic text-muted-foreground">
-            Let it out, {NAME}. I've earned every single punch for what I did.
-          </p>
+      <p className="text-sm uppercase tracking-[0.3em] text-pink-500 font-semibold">
+        For My Precious {NAME} 💌
+      </p>
 
-          <div className="mt-8">
-            <Btn variant="primary" onClick={() => onNext(3)} className="w-full">
-              Okay, I feel lighter
-            </Btn>
-          </div>
-        </TapeCard>
-      </PageShell>
-    </div>
+      <h1 className="mt-3 text-4xl sm:text-5xl font-black leading-tight text-primary">
+        Punch Away <br />
+        The Pain I Caused
+      </h1>
+
+      <p className="mt-5 max-w-md mx-auto text-base leading-relaxed text-muted-foreground">
+        I know I hurt your heart, {NAME}.  
+        So for every punch, I’ll pay <span className="font-bold text-pink-500">5 BAHT</span> —
+        not because your pain has a price,
+        but because I want to turn your anger into smiles, even a little. ❤️
+      </p>
+
+      <p className="mt-3 text-sm text-pink-400 italic">
+        Hit it as many times as you want, then screenshot it and send it to me 🌸
+      </p>
+
+      <button
+        onClick={hit}
+        className="
+          btn-3d mx-auto mt-10
+          flex h-52 w-52
+          select-none items-center justify-center
+          rounded-full
+          bg-gradient-to-br from-pink-400 to-rose-500
+          shadow-[0_20px_60px_rgba(244,114,182,0.45)]
+          transition-all duration-200
+          hover:scale-105
+          active:scale-95
+        "
+        aria-label="Punch button"
+      >
+        <img
+          src={fistImg}
+          alt=""
+          width={150}
+          height={150}
+          className="h-36 w-36 pointer-events-none drop-shadow-2xl"
+        />
+      </button>
+
+      <div className="mt-6">
+        <p className="text-sm uppercase tracking-widest text-pink-400">
+          Total Damage 💔
+        </p>
+
+        <div className="mt-2 text-5xl font-black text-primary tabular-nums">
+          x{count}
+        </div>
+
+        <p className="mt-2 text-lg font-semibold text-pink-500">
+          = {count * 5} BAHT 💸
+        </p>
+      </div>
+
+      <p className="mt-8 italic text-muted-foreground leading-relaxed">
+        If I could undo the pain I caused, I would, {NAME}.  
+        Until then, I’ll keep proving my love through actions, not just words.
+      </p>
+
+      <div className="mt-10">
+        <Btn
+          variant="primary"
+          onClick={() => onNext(3)}
+          className="w-full rounded-2xl py-6 text-lg font-bold shadow-lg"
+        >
+          Okay… My Heart Feels Better 💖
+        </Btn>
+      </div>
+    </TapeCard>
+  </PageShell>
+</div>
   );
 }
 

@@ -94,7 +94,7 @@ export function Step2({ onNext }: Props) {
             Here, hit reset, {NAME}
           </h1>
           <p className="mt-3 text-muted-foreground">
-            Tap as many times as you need to, {NAME}. Vent all your anger out on me.
+            Tap as many times as you need to, {NAME}. Vent all your anger out on me. 1 Punch = 10 BAHT .. Screenshot & Send Me...  I will give you <3
           </p>
 
           <button

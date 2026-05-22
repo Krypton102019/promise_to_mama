@@ -102,8 +102,8 @@ export function Step2({ onNext }: Props) {
 
       <p className="mt-5 max-w-md mx-auto text-base leading-relaxed text-muted-foreground">
         I know I hurt your heart, {NAME}.  
-        So for every punch, I’ll pay <span className="font-bold text-pink-500">5 BAHT</span> —
-        not because your pain has a price,
+        So for every punch, I’ll pay <span className="font-bold text-pink-500">5 BAHT</span>.
+        Not because your pain has a price,
         but because I want to turn your anger into smiles, even a little. ❤️
       </p>
 
